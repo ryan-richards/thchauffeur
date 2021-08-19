@@ -3,13 +3,14 @@
 <div class="container">
 <div class="card-under has-text-left mb-6">
         <div class="title ">TH Chauffeur Service</div>
-         <div class="subtitle">Under Construction</div>
+         <div class="subtitle">Website Under Construction</div>
          <div class="block">
-           <p class="has-text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ad ipsam unde nisi exercitationem quasi sint esse amet eaque optio mollitia dolorum iste corporis, commodi qui quo enim reprehenderit quisquam quaerat deleniti aliquam cupiditate. Odit vel amet, nam necessitatibus optio nisi illum expedita officia voluptatem perferendis magnam iusto laudantium rerum, enim minus recusandae beatae fugit quis minima? Eligendi, molestiae. Accusamus impedit ea tempora nam maxime, odio deserunt necessitatibus libero! Voluptates laudantium unde maxime incidunt. Doloribus nemo illum eligendi animi soluta veniam libero perspiciatis suscipit, perferendis excepturi molestiae porro ullam atque at natus esse ducimus ut officia odio, consequatur quod voluptates?</p>
+           <p class="has-text-black">Offering a wide range of chauffeur services. Including airport car services both pickup and drop-off, business meetings transport and wedding cars.</p>
+           <p class="has-text-black">Website is currently under construction but you can still get in touch using the links below.</p>
          </div>
          <div class="buttons">
-           <a href="mailto: terryhutley@me.com" class="button is-outline is-medium">Email</a>
-           <a href="tel: +447595023157" class="button is-medium">Mobile</a>
+           <a href="mailto: terryhutley@me.com" class="button is-outline">Email</a>
+           <a href="tel: +447595023157" class="button">Mobile</a>
          </div>
 </div>
 </div>
