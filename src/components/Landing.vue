@@ -3,7 +3,7 @@
 <div class="container">
 <div class="card-under has-text-left mb-6">
         <div class="title ">TH Chauffeur Service</div>
-         <div class="subtitle">Website Under is Construction</div>
+         <div class="subtitle">Website Under Construction</div>
          <div class="block">
            <p class="has-text-black">Offering a wide range of chauffeur services. Including airport car services both pickup and drop-off, business meetings transport and wedding cars.</p>
            <p class="has-text-black">Website is currently under construction but you can still get in touch using the links below.</p>
