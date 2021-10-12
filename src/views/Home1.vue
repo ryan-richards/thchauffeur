@@ -11,15 +11,19 @@
         />
         <img
           class="carousel-img"
-          src="../assets/wedding-car.jpg"
+          src="../assets/wedding-car1.jpg"
         />
         <img
           class="carousel-img"
-          src="../assets/airport.jpg"
+          src="../assets/airport2.jpg"
         />
         <img
           class="carousel-img"
-          src="../assets/business.jpg"
+          src="../assets/business1.jpg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/private-hire.jpg"
         />
         <img
           class="carousel-img"
@@ -60,15 +64,6 @@
       </n-ol>
     </n-space>
 
-<n-button class="center" icon-placement="right" size="large">
-        Contact
-        <template #icon>
-          <n-icon>
-            <location-icon />
-          </n-icon>
-        </template>
-      </n-button>
-
   </n-layout-content>
   <n-layout-content content-style="padding:24px;" v-motion-fade-visible>
 
@@ -82,14 +77,25 @@
         Please contact Terry to discuss how we can help with your requirements
         and make your occasion go smoothly in Style and Luxury.
       </n-h2>
-      <n-button class="center" icon-placement="right" size="large">
-        Contact
+      <n-space justify="center">
+      <n-button @click="sendEmail" style="margin-top:0rem;min-width:150px;" class="center" icon-placement="right" size="large">
+        Email
         <template #icon>
           <n-icon>
             <mail-icon />
           </n-icon>
         </template>
       </n-button>
+        <n-button @click="callMobile" style="margin-top:0rem;min-width:150px;" class="center" icon-placement="right" size="large">
+        Mobile
+        <template #icon>
+          <n-icon>
+            <mobile-icon />
+          </n-icon>
+        </template>
+      </n-button>
+
+      </n-space>
     </n-card>
       
     </n-space>
@@ -98,15 +104,33 @@
 
 <script>
 import { MailOutline as MailIcon,
-LocationOutline as LocationIcon
+CallOutline as MobileIcon
  } from "@vicons/ionicons5";
 import { defineComponent } from "vue";
 export default defineComponent({
   components: {
     MailIcon,
-    LocationIcon
+    MobileIcon,
   },
-  setup() {},
+  setup() {
+
+    function sendEmail() {
+    var email = "terryhutley@me.com";
+    var subject = "I'm interested in chauffeur services ";
+    var emailBody = 'Hello Terry,';
+    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+    }
+    function callMobile() {
+    var mobile = "07595023157";
+    document.location = "tel:"+mobile;
+    }
+
+    return{
+      sendEmail,
+      callMobile,
+    }
+
+  },
 });
 </script>
 
@@ -132,5 +156,10 @@ export default defineComponent({
   width: 100%;
   height: 50vh;
   object-fit: cover;
+}
+
+
+.n-carousel{
+  pointer-events: none;
 }
 </style>

@@ -8,7 +8,7 @@
 <div class="pad">
    <img
           class="img-pad"
-          src="../assets/wedding-car.jpg"
+          src="../assets/wedding-car1.jpg"
         />
     </div>
 </n-space>
@@ -18,20 +18,6 @@
 We cover Northern Ireland and into the South as required.</n-h3>
 <n-h3><n-text italic>Travel in Luxury and Style</n-text> </n-h3>
 </n-space>
-
-
-
-<n-grid cols="1 s:2" responsive="screen" style="padding-top:2rem;">
-  <n-grid-item>
-       <img src="../assets/merc.png"/>
-       <n-h4 style="margin-top:-1rem;">Mercedes S Class</n-h4>
-  </n-grid-item>
-    <n-grid-item>
-       <img src="../assets/jag.jpeg"/>
-       <n-h4 style="margin-top:-1rem;">Jaguar XJ L</n-h4>
-  </n-grid-item>
-</n-grid>
-
 
 <n-h3 class="center" style="text-align:left;max-width:700px;">We will look after:</n-h3>
 <n-space class="center" style="max-width:700px;padding:24px;">
@@ -85,6 +71,12 @@ export default defineComponent({
 </script>
 
 <style>
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-pad {
   width: 100%;
   height: 50vh;

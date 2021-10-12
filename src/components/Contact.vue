@@ -11,14 +11,26 @@
       <n-h2>
         Please contact Terry to discuss how we can make your journey hassle free.
       </n-h2>
-      <n-button style="margin-top:0rem;" class="center" icon-placement="right" size="large">
-        Contact
+      <n-space justify="center">
+      <n-button @click="sendEmail" style="margin-top:0rem;min-width:150px;" class="center" icon-placement="right" size="large">
+        Email
         <template #icon>
           <n-icon>
             <mail-icon />
           </n-icon>
         </template>
       </n-button>
+        <n-button @click="callMobile" style="margin-top:0rem;min-width:150px;" class="center" icon-placement="right" size="large">
+        Mobile
+        <template #icon>
+          <n-icon>
+            <mobile-icon />
+          </n-icon>
+        </template>
+      </n-button>
+
+      </n-space>
+      
 
     </n-card>
 
@@ -28,11 +40,29 @@
 </template>
 
 <script>
-import { MailOutline as MailIcon } from "@vicons/ionicons5";
+import { MailOutline as MailIcon,
+CallOutline as MobileIcon } from "@vicons/ionicons5";
 import { defineComponent } from "vue";
 export default defineComponent({
   components: {
     MailIcon,
+    MobileIcon
+  },
+  setup(){
+    function sendEmail() {
+    var email = "terryhutley@me.com";
+    var subject = "I'm interested in chauffeur services ";
+    var emailBody = 'Hello Terry,';
+    document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+    }
+    function callMobile() {
+    var mobile = "07595023157";
+    document.location = "tel:"+mobile;
+    }
+    return {
+      sendEmail,
+      callMobile,
+    }
   }
 });
 </script>

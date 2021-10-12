@@ -8,7 +8,7 @@
 <div class="pad">
    <img
           class="img-pad"
-          src="../assets/airport.jpg"
+          src="../assets/airport2.jpg"
         />
     </div>
 </n-space>
