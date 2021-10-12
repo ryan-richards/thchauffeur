@@ -32,7 +32,7 @@
       </n-ol>
 </n-space>
 
-<n-h3 class="center" style="max-width:600px;">
+<n-h3 class="center" style="max-width:600px;padding:24px;">
  <n-text italic>Travel without the worry of parking and get to your 
 appointments ready to do business.
 Our Chauffeurs provide you with a discreet and confidential 
