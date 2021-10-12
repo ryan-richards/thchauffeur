@@ -1,13 +1,30 @@
 <template>
-  <Landing/>
+ <n-config-provider :theme="darkTheme">
+   <n-global-style />
+  <Navbar />
+  <div>
+    <router-view />
+  </div>
+  <Footer />
+   </n-config-provider>
 </template>
 
 <script>
-import Landing from './components/Landing.vue'
- export default {
-   components: { Landing }
- }
+import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
+import { darkTheme } from 'naive-ui'
 
+ export default {
+   components: { 
+     Navbar,
+     Footer
+   },
+    setup() {
+      return{
+        darkTheme
+      }
+    }
+ }
 </script>
 
 <style>
@@ -16,14 +33,22 @@ import Landing from './components/Landing.vue'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
 
 body {
-background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
- background-blend-mode: normal, lighten, soft-light;
+  overflow-x: hidden ;
 }
-
 
 </style>
