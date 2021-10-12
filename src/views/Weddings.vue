@@ -85,5 +85,14 @@ export default defineComponent({
 </script>
 
 <style>
+.img-pad {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
 
+.pad{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 </style>
