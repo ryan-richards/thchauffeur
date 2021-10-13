@@ -1,5 +1,5 @@
 <template>
-    <n-layout-content>
+<n-layout-content>
 
 <n-h1>Executive Transfers</n-h1>
 

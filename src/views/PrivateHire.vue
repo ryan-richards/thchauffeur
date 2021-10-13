@@ -13,7 +13,7 @@
  
 </n-space>
 
-<n-h3>We can provide you with a range to Modern Luxury vehicles to suit your requirements.</n-h3>
+<n-h3>We can provide you with a range of Modern Luxury vehicles to suit your requirements.</n-h3>
 
 <n-space class="center" style="max-width: 500px">
       <n-ol
