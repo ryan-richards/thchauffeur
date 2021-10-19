@@ -40,7 +40,7 @@
 </n-space>
 
 <n-modal v-model:show="showModal" 
-:mask-closable="false" preset="dialog" title="Current Fleet"
+:mask-closable="false" preset="dialog" title="Available Vehicles"
 :show-icon="false" :on-close="unlock"
 >
     <ImageSlider />

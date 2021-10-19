@@ -20,11 +20,11 @@ We cover Northern Ireland and into the South as required.</n-h3>
 </n-space>
 
 <n-h3 class="center" style="text-align:left;max-width:700px;">We will look after:</n-h3>
-<n-space class="center" style="max-width:700px;padding:24px;">
+<n-space class="center" style="max-width:500px;padding:10px;">
 
       <n-ol
         style="
-          max-width: 700px;
+          max-width: 500px;
           text-align: left;
           list-style: circle;
           font-size: 1.2rem;
@@ -56,7 +56,7 @@ We cover Northern Ireland and into the South as required.</n-h3>
 </n-space>
 
 <n-modal v-model:show="showModal" 
-:mask-closable="false" preset="dialog" title="Current Fleet"
+:mask-closable="false" preset="dialog" title="Available Vehicles"
 :show-icon="false" :on-close="unlock"
 >
     <ImageSlider />
