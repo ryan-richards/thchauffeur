@@ -4,7 +4,7 @@
 
 <n-h1>Airport Transfers</n-h1>
 
-<n-space class="center" style="max-width: 700px"> 
+<n-space justify class="center" style="max-width: 700px"> 
 <div class="pad">
    <img
           class="img-pad"

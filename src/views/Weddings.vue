@@ -4,7 +4,7 @@
 
 <n-h1>Wedding Car Hire</n-h1>
 
-<n-space class="center" style="max-width: 700px"> 
+<n-space justify class="center" style="max-width: 700px"> 
 <div class="pad">
    <img
           class="img-pad"
@@ -51,6 +51,26 @@ We cover Northern Ireland and into the South as required.</n-h3>
 </n-h4>
 </n-space>
 
+<n-space justify class="center" style="max-width: 700px" @click="openModal" > 
+<div class="pad">
+  <div class="overlay-fade">
+   <img
+          class="img-pad"
+          src="../assets/merc-jag.jpeg"    
+    />
+    <n-button>View Fleet</n-button>
+    </div>
+  </div>
+
+</n-space>
+
+<n-modal v-model:show="showModal" 
+:mask-closable="false" preset="dialog" title="Current Fleet"
+:show-icon="false" :on-close="unlock"
+>
+    <ImageSlider />
+</n-modal>
+
 <Contact />
 
 </n-layout-content>
@@ -60,13 +80,33 @@ We cover Northern Ireland and into the South as required.</n-h3>
 
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref} from "vue";
 import Contact from "../components/Contact.vue"
+import ImageSlider from "../components/ImageSlider.vue"
 export default defineComponent({
   components: {
-    Contact
+    Contact,
+    ImageSlider
   },
-  setup() {},
+  setup() {
+
+    const showModal = ref(false);
+  
+    function openModal(){
+      showModal.value = true;
+      document.body.classList.add("modal-open");
+    }
+
+    function unlock(){
+      document.body.classList.remove("modal-open");
+    }
+
+    return{
+      showModal,
+      openModal,
+      unlock
+    }
+  },
 });
 </script>
 
@@ -75,6 +115,7 @@ export default defineComponent({
 .center {
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .img-pad {
@@ -86,5 +127,10 @@ export default defineComponent({
 .pad{
     padding-left: 1rem;
     padding-right: 1rem;
+    position: relative;
+}
+
+body.modal-open{
+  overflow: hidden;
 }
 </style>

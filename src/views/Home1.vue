@@ -25,10 +25,6 @@
           class="carousel-img"
           src="../assets/private-hire.jpg"
         />
-        <img
-          class="carousel-img"
-          src="../assets/jag-logo.jpg"
-        />
       </n-carousel>
     </n-space>
   </n-layout-content>
