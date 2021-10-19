@@ -35,6 +35,17 @@
 <n-h3>
  <n-text italic>Let us drive you in comfort and style with no worries as to parking etc.</n-text>  
 </n-h3>
+
+<n-space justify class="center" style="max-width: 700px" @click="openModal" > 
+    <n-button @click="openModal">View Vehicles</n-button>
+</n-space>
+
+<n-modal v-model:show="showModal" 
+:mask-closable="false" preset="dialog" title="Current Fleet"
+:show-icon="false" :on-close="unlock"
+>
+    <ImageSlider />
+</n-modal>
  
 
 <Contact />
@@ -43,12 +54,33 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref} from "vue";
 import Contact from "../components/Contact.vue"
+import ImageSlider from "../components/ImageSlider.vue"
 export default defineComponent({
   components: {
     Contact,
-  },
+    ImageSlider
+  },  
+  setup() {
+
+    const showModal = ref(false);
+  
+    function openModal(){
+      showModal.value = true;
+      document.body.classList.add("modal-open");
+    }
+
+    function unlock(){
+      document.body.classList.remove("modal-open");
+    }
+
+    return{
+      showModal,
+      openModal,
+      unlock
+    }
+  }
 });
 </script>
 

@@ -52,16 +52,7 @@ We cover Northern Ireland and into the South as required.</n-h3>
 </n-space>
 
 <n-space justify class="center" style="max-width: 700px" @click="openModal" > 
-<div class="pad">
-  <div class="overlay-fade">
-   <img
-          class="img-pad"
-          src="../assets/merc-jag.jpeg"    
-    />
-    <n-button>View Fleet</n-button>
-    </div>
-  </div>
-
+    <n-button @click="openModal">View Vehicles</n-button>
 </n-space>
 
 <n-modal v-model:show="showModal" 
