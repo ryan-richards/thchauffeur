@@ -1,21 +1,53 @@
 <template>
     <n-space class="center" style="max-width: 700px">
       <n-carousel show-arrow>
-               <img
+        <img
           class="carousel-img"
-          src="../assets/merc-jag.jpeg"
+          src="../assets/Pic1-min.jpeg"
         />
         <img
           class="carousel-img"
-          src="../assets/jag-wed.jpeg"
+          src="../assets/Pic2-min.jpeg"
         />
         <img
           class="carousel-img"
-          src="../assets/black-merc.jpg"
+          src="../assets/Pic3-min.jpeg"
         />
         <img
           class="carousel-img"
-          src="../assets/black-merc-van.jpeg"
+          src="../assets/Pic4-min.jpg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic5-min.jpeg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic6-min.jpeg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic7-min.jpeg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic8-min.jpeg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic9-min.jpeg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic10-min.jpg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic11-min.jpeg"
+        />
+        <img
+          class="carousel-img"
+          src="../assets/Pic12-min.jpg"
         />
       </n-carousel>
     </n-space>
@@ -28,6 +60,6 @@
 }
 
 .carousel-img{
-    max-height: 300px;;
+    min-height: 300px;;
 }
 </style>
