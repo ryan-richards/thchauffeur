@@ -60,6 +60,7 @@
 }
 
 .carousel-img{
+    object-fit: contain;
     min-height: 300px;;
 }
 </style>
