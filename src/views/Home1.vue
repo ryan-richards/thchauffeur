@@ -1,7 +1,7 @@
 <template>
   <n-layout-content content-style="padding: 24px;" v-motion-fade>
     <n-h1 class="center" style="font-size: 2rem; max-width: 800px"
-      >Professional Discrete Experienced Chauffeur Service</n-h1
+      >Professional Discreet Experienced Chauffeur Service</n-h1
     >
     <n-space class="center" style="max-width: 700px">
       <n-carousel autoplay>
