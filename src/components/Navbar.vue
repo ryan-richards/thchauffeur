@@ -2,7 +2,10 @@
 <n-layout>
 <n-layout-header align="left">
 <n-space justify="space-between" >
-<n-h2 align="left"> <router-link to="/">TH</router-link></n-h2>
+ <img
+          class="logo"
+          src="../assets/logo.png"
+        />
 <n-menu v-model:value="activeKey" mode="horizontal" :options="menuOptions" v-if="!(isMobile || isTablet)"/>
 
 <n-dropdown
@@ -136,5 +139,9 @@ components: {
 .n-layout-footer {
 background-color:rgb(16,16,20) ;
   padding: 24px;
+}
+
+.logo {
+  max-width:60px;
 }
 </style>

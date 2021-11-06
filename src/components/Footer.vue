@@ -5,7 +5,7 @@
 <n-grid cols="1 s:2" responsive="screen" style="padding-top:2rem;">
 <n-grid-item style="padding-bottom:2rem;">
 <n-ul style="text-align:left;font-size:1rem;">
-  <n-li>TH Chauffeur</n-li>
+  <n-li>TH Chauffeur Service</n-li>
   <n-li><n-a href="mailto:terryhutley@me.com">terryhutley@me.com</n-a></n-li>
   <n-li>Copyright 2021</n-li>
 </n-ul>
