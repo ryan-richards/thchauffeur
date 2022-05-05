@@ -7,7 +7,7 @@
       <n-carousel autoplay>
                <img
           class="carousel-img"
-          src="../assets/Pic14.jpg"
+          src="../assets/merc-logo.jpg"
         />
         <img
           class="carousel-img"
