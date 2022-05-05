@@ -27,6 +27,11 @@ const routes = [
         name: 'Executive',
         component: () => import("../views/Executive.vue")
     },
+    {
+        path: '/reccomended',
+        name: 'Reccomended',
+        component: () => import("../views/Reccomended.vue")
+    },
 ]
 
 const router = createRouter({

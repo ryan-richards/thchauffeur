@@ -4,13 +4,8 @@ import router from './router'
 import { createHead } from '@vueuse/head'
 import { MotionPlugin } from '@vueuse/motion'
 import naive from 'naive-ui'
-import './index.css'
-
-
-
 
 const head = createHead()
-
 
 createApp(App)
 .use(router)

@@ -6,11 +6,8 @@
 
 <n-space justify class="center" style="max-width: 700px"> 
 <div class="pad">
-   <img
-          class="img-pad"
-          src="../assets/wedding-car1.jpg"
-        />
-    </div>
+  <WeddingSlider />
+</div>
 </n-space>
 
 <n-space vertical class="center" style="max-width: 700px;padding:24px;"> 
@@ -74,10 +71,12 @@ We cover Northern Ireland and into the South as required.</n-h3>
 import { defineComponent, ref} from "vue";
 import Contact from "../components/Contact.vue"
 import ImageSlider from "../components/ImageSlider.vue"
+import WeddingSlider from "../components/WeddingSlider.vue";
 export default defineComponent({
   components: {
     Contact,
-    ImageSlider
+    ImageSlider,
+    WeddingSlider
   },
   setup() {
 

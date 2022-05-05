@@ -21,7 +21,7 @@ import { darkTheme } from 'naive-ui'
    },
     setup() {
       return{
-        darkTheme
+        darkTheme,
       }
     }
  }
