@@ -53,7 +53,7 @@ We cover Northern Ireland and into the South as required.</n-h3>
 </n-space>
 
 <n-modal v-model:show="showModal" 
-:mask-closable="false" preset="dialog" title="Available Vehicles"
+:mask-closable="false" preset="dialog" title="Weddings"
 :show-icon="false" :on-close="unlock"
 >
 <WeddingSlider />
