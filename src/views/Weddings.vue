@@ -6,11 +6,12 @@
 
 <n-space justify class="center" style="max-width: 700px"> 
 <div class="pad">
-  <WeddingSlider />
+  <img src="../assets/wedding-car1.jpg" class="img-pad"/>
+  
 </div>
 </n-space>
 
-<n-space vertical class="center" style="max-width: 700px;padding:24px;"> 
+<n-space vertical class="center" style="max-width: 700px; padding:24px;"> 
 <n-h3>Let us take care of all your transport needs on your Special Day
 We cover Northern Ireland and into the South as required.</n-h3>
 <n-h3><n-text italic>Travel in Luxury and Style</n-text> </n-h3>
@@ -18,7 +19,6 @@ We cover Northern Ireland and into the South as required.</n-h3>
 
 <n-h3 class="center" style="text-align:left;max-width:700px;">We will look after:</n-h3>
 <n-space class="center" style="max-width:500px;padding:10px;">
-
       <n-ol
         style="
           max-width: 500px;
@@ -49,14 +49,14 @@ We cover Northern Ireland and into the South as required.</n-h3>
 </n-space>
 
 <n-space justify class="center" style="max-width: 700px" @click="openModal" > 
-    <n-button @click="openModal">View Vehicles</n-button>
+    <n-button @click="openModal">Weddings</n-button>
 </n-space>
 
 <n-modal v-model:show="showModal" 
 :mask-closable="false" preset="dialog" title="Available Vehicles"
 :show-icon="false" :on-close="unlock"
 >
-    <ImageSlider />
+<WeddingSlider />
 </n-modal>
 
 <Contact />
